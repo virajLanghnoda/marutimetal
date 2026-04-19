@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Maruti Metal</title>
 <!-- PRIMARY SEO -->
   <title>Maruti Metal | Kitchenware Manufacturer & OEM Supplier in Rajkot, India</title>
   <meta name="description" content="Maruti Metal is a leading kitchenware manufacturer in Rajkot, Gujrat, India. We specialize in stainless steel kitchen products like lunch boxes, knives, graters, strainers & OEM supply worldwide." />
@@ -75,22 +74,24 @@
 
     <!-- Vendor CSS Files -->
     <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
       href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
+<link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<noscript>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</noscript>
+    <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet" /> -->
+    <!-- <link
       href="assets/vendor/glightbox/css/glightbox.min.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" /> -->
 
     <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
   </head>
 
     <body class="index-page">
@@ -1414,9 +1415,9 @@
     ></a>
 
     <!-- Preloader -->
-    <div id="preloader">
+    <!-- <div id="preloader">
       <img src="assets/img/cmk logo.png" loading="lazy"  alt="logo" id="preloader-logo" />
-    </div>
+    </div> -->
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
