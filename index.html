@@ -10,8 +10,11 @@
   <meta name="keywords" content="Maruti Metal, kitchenware manufacturer India, stainless steel kitchen products, OEM kitchenware supplier, lunch box manufacturer Rajkot, kitchen tools India" />
   <meta name="author" content="Maruti Metal" />
 
+  <link rel="preload" as="image" href="assets/img/mainimage.jpeg" fetchpriority="high" />
+
   <!-- TECHNICAL SEO -->
   <meta name="robots" content="index, follow" />
+
   <link rel="canonical" href="https://www.marutimetals.in/" />
 
   <!-- OPEN GRAPH (WhatsApp, LinkedIn, Facebook) -->
@@ -73,24 +76,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Critical CSS only - loads blocking -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="assets/css/main.css" rel="stylesheet" />
 
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
+<!-- Non-critical CSS - loads async (no render block) -->
+<link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css"></noscript>
+
+<link rel="preload" href="assets/vendor/aos/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/vendor/aos/aos.css"></noscript>
+
+<link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css"></noscript>
+
+<link rel="preload" href="assets/vendor/swiper/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css"></noscript>
   </head>
 
   <body class="index-page">
@@ -344,7 +345,7 @@
               <div class="member">
                 <div class="pic">
                   <img
-                    src="assets/newSeries/IMG_9004 copy.jpg"
+                    src="assets/newSeries/IMG_9004 copy.webp"
                     class="img-fluid"
                     alt=""
                   />
